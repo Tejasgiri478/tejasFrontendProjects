@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - TechServe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TechServe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Our Portfolio</h1>
+            <p class="lead">Explore our successful projects and case studies</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Filters -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="portfolio-filters">
+                        <button class="btn btn-outline-primary active me-2 mb-2" data-filter="*">All Projects</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter=".web-development">Web
+                            Development</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter=".mobile-app">Mobile Apps</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter=".cloud-solutions">Cloud
+                            Solutions</button>
+                        <button class="btn btn-outline-primary me-2 mb-2"
+                            data-filter=".cybersecurity">Cybersecurity</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="row g-4 portfolio-grid">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item web-development">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-1.jpg" class="card-img-top" alt="E-commerce Website">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Platform</h5>
+                            <p class="text-muted">Web Development</p>
+                            <p class="card-text">A fully responsive e-commerce platform with integrated payment
+                                gateways, inventory management, and customer analytics.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item mobile-app">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-2.jpg" class="card-img-top" alt="Mobile App">
+                        <div class="card-body">
+                            <h5 class="card-title">Health & Fitness App</h5>
+                            <p class="text-muted">Mobile App Development</p>
+                            <p class="card-text">A cross-platform mobile application for tracking fitness activities,
+                                nutrition, and health metrics with personalized recommendations.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal2">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 portfolio-item cloud-solutions">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-3.jpg" class="card-img-top" alt="Cloud Migration">
+                        <div class="card-body">
+                            <h5 class="card-title">Enterprise Cloud Migration</h5>
+                            <p class="text-muted">Cloud Solutions</p>
+                            <p class="card-text">Migrated a large enterprise's infrastructure to AWS, resulting in
+                                improved scalability, reduced costs, and enhanced security.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 portfolio-item cybersecurity">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-4.jpg" class="card-img-top" alt="Security Audit">
+                        <div class="card-body">
+                            <h5 class="card-title">Financial Institution Security</h5>
+                            <p class="text-muted">Cybersecurity</p>
+                            <p class="card-text">Implemented comprehensive security measures for a financial
+                                institution, including threat detection, encryption, and compliance solutions.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal4">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4 portfolio-item web-development">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-5.jpg" class="card-img-top" alt="CRM System">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom CRM Solution</h5>
+                            <p class="text-muted">Web Development</p>
+                            <p class="card-text">Developed a tailored customer relationship management system with
+                                advanced analytics and automation features.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal5">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4 portfolio-item mobile-app">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-6.jpg" class="card-img-top" alt="Food Delivery App">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Delivery Platform</h5>
+                            <p class="text-muted">Mobile App Development</p>
+                            <p class="card-text">A comprehensive food delivery platform with real-time tracking, payment
+                                processing, and restaurant management features.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal6">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="col-md-6 col-lg-4 portfolio-item cloud-solutions">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-7.jpg" class="card-img-top" alt="Data Analytics Platform">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Data Analytics Platform</h5>
+                            <p class="text-muted">Cloud Solutions</p>
+                            <p class="card-text">Implemented a scalable big data analytics platform on Google Cloud,
+                                enabling real-time insights and predictive analytics.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal7">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="col-md-6 col-lg-4 portfolio-item cybersecurity">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-8.jpg" class="card-img-top" alt="Security Training">
+                        <div class="card-body">
+                            <h5 class="card-title">Enterprise Security Program</h5>
+                            <p class="text-muted">Cybersecurity</p>
+                            <p class="card-text">Developed and implemented a comprehensive security awareness program
+                                for a multinational corporation with 10,000+ employees.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal8">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="col-md-6 col-lg-4 portfolio-item web-development">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/portfolio-9.jpg" class="card-img-top" alt="Learning Management System">
+                        <div class="card-body">
+                            <h5 class="card-title">Learning Management System</h5>
+                            <p class="text-muted">Web Development</p>
+                            <p class="card-text">A comprehensive LMS with course creation tools, student progress
+                                tracking, and interactive learning features.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#portfolioModal9">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Featured Case Studies</h2>
+                    <p class="lead">Detailed insights into our most impactful projects</p>
+                </div>
+            </div>
+
+            <!-- Case Study 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/case-study-1.jpg" alt="Case Study" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Global Retail Chain Digital Transformation</h3>
+                    <p class="text-muted">Cloud Solutions, Web Development</p>
+                    <p>We helped a global retail chain with 500+ locations transform their digital infrastructure,
+                        moving from legacy systems to a cloud-based architecture with modern web applications.</p>
+                    <h5>Challenges:</h5>
+                    <ul>
+                        <li>Legacy systems with limited scalability</li>
+                        <li>Inconsistent customer experience across channels</li>
+                        <li>Data silos preventing unified analytics</li>
+                    </ul>
+                    <h5>Solutions:</h5>
+                    <ul>
+                        <li>Comprehensive cloud migration to AWS</li>
+                        <li>Development of unified e-commerce platform</li>
+                        <li>Implementation of data lake for centralized analytics</li>
+                    </ul>
+                    <h5>Results:</h5>
+                    <ul>
+                        <li>43% reduction in IT operational costs</li>
+                        <li>67% improvement in website performance</li>
+                        <li>28% increase in online sales conversion</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3">Read Full Case Study</a>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/case-study-2.jpg" alt="Case Study" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Healthcare Provider Mobile Solution</h3>
+                    <p class="text-muted">Mobile App Development, Cybersecurity</p>
+                    <p>We developed a secure mobile platform for a large healthcare provider, enabling patients to
+                        access medical records, schedule appointments, and communicate with healthcare professionals.
+                    </p>
+                    <h5>Challenges:</h5>
+                    <ul>
+                        <li>Strict regulatory compliance requirements (HIPAA)</li>
+                        <li>Integration with existing electronic health record systems</li>
+                        <li>Need for intuitive user experience for diverse patient demographics</li>
+                    </ul>
+                    <h5>Solutions:</h5>
+                    <ul>
+                        <li>HIPAA-compliant mobile application for iOS and Android</li>
+                        <li>Secure API integration with existing EHR systems</li>
+                        <li>User-centered design with accessibility features</li>
+                    </ul>
+                    <h5>Results:</h5>
+                    <ul>
+                        <li>35% reduction in appointment no-shows</li>
+                        <li>62% of patients actively using the app within 6 months</li>
+                        <li>41% decrease in call center volume</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3">Read Full Case Study</a>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/case-study-3.jpg" alt="Case Study" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Financial Services Cybersecurity Overhaul</h3>
+                    <p class="text-muted">Cybersecurity, Cloud Solutions</p>
+                    <p>We implemented a comprehensive cybersecurity solution for a mid-sized financial services firm,
+                        protecting sensitive customer data and ensuring regulatory compliance.</p>
+                    <h5>Challenges:</h5>
+                    <ul>
+                        <li>Increasing sophistication of cyber threats</li>
+                        <li>Complex regulatory landscape (GDPR, PCI DSS, etc.)</li>
+                        <li>Legacy infrastructure with security vulnerabilities</li>
+                    </ul>
+                    <h5>Solutions:</h5>
+                    <ul>
+                        <li>End-to-end security assessment and remediation</li>
+                        <li>Implementation of zero-trust architecture</li>
+                        <li>Advanced threat detection and response system</li>
+                    </ul>
+                    <h5>Results:</h5>
+                    <ul>
+                        <li>100% compliance with industry regulations</li>
+                        <li>85% reduction in security incidents</li>
+                        <li>50% faster threat detection and response</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3">Read Full Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2>What Our Clients Say</h2>
+                    <p class="lead">Feedback from the organizations we've worked with</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">"TechServe transformed our digital infrastructure, resulting in
+                                improved performance, enhanced security, and significant cost savings. Their team was
+                                professional, knowledgeable, and responsive throughout the project."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="images/testimonial-1.jpg" alt="Client" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <h5 class="mb-0">Robert Johnson</h5>
+                                    <p class="text-muted mb-0">CTO, Global Retail Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">"The mobile application developed by TechServe has revolutionized
+                                how we interact with our patients. The app is intuitive, secure, and has received
+                                overwhelmingly positive feedback from users."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="images/testimonial-2.jpg" alt="Client" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <h5 class="mb-0">Jennifer Martinez</h5>
+                                    <p class="text-muted mb-0">Director of IT, HealthFirst</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">"TechServe's cybersecurity solutions have given us peace of mind
+                                knowing our sensitive data is protected. Their proactive approach to security has
+                                prevented numerous potential incidents."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="images/testimonial-3.jpg" alt="Client" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <h5 class="mb-0">Michael Thompson</h5>
+                                    <p class="text-muted mb-0">CISO, Financial Services Group</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 text-center cta-section text-white">
+        <div class="container">
+            <h2 class="display-5 fw-bold">Ready to start your project?</h2>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Contact us today to discuss how our IT services can help your business achieve its
+                    goals.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="contact.html" class="btn btn-light btn-lg px-4 gap-3">Get in Touch</a>
+                    <a href="services.html" class="btn btn-outline-light btn-lg px-4">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal1Label">E-commerce Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/portfolio-1.jpg" alt="Project" class="img-fluid mb-4">
+                    <h4>Project Overview</h4>
+                    <p>We developed a comprehensive e-commerce platform for a retail client looking to expand their
+                        online presence. The platform includes product management, inventory tracking, payment
+                        processing, and customer analytics.</p>
+                    <h4>Technologies Used</h4>
+                    <ul>
+                        <li>Frontend: React.js, Bootstrap</li>
+                        <li>Backend: Node.js, Express</li>
+                        <li>Database: MongoDB</li>
+                        <li>Payment Processing: Stripe API</li>
+                        <li>Hosting: AWS</li>
+                    </ul>
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Responsive design for all devices</li>
+                        <li>Advanced search and filtering</li>
+                        <li>Secure payment processing</li>
+                        <li>Inventory management system</li>
+                        <li>Customer account management</li>
+                        <li>Order tracking and history</li>
+                        <li>Analytics dashboard</li>
+                    </ul>
+                    <h4>Results</h4>
+                    <p>The platform resulted in a 45% increase in online sales within the first three months, with a 30%
+                        improvement in customer retention. The client also saw a significant reduction in operational
+                        costs due to the automated inventory management system.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>TechServe</h5>
+                    <p class="text-muted">Providing quality IT services since 2010. We help businesses leverage
+                        technology for growth and success.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted">Home</a></li>
+                        <li><a href="services.html" class="text-muted">Services</a></li>
+                        <li><a href="about.html" class="text-muted">About Us</a></li>
+                        <li><a href="portfolio.html" class="text-muted">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html#cloud" class="text-muted">Cloud Solutions</a></li>
+                        <li><a href="services.html#web" class="text-muted">Web Development</a></li>
+                        <li><a href="services.html#mobile" class="text-muted">Mobile Apps</a></li>
+                        <li><a href="services.html#network" class="text-muted">Network Solutions</a></li>
+                        <li><a href="services.html#security" class="text-muted">Cybersecurity</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address class="text-muted">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Tech Street, Suite 456<br>San Francisco, CA
+                            94107</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@techserve.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2023 TechServe. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-muted mb-0">Privacy Policy | Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
