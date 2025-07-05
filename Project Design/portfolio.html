@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Modern UI Design</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>DesignStudio</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Explore our latest work and creative solutions</p>
+        </div>
+    </section>
+
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="portfolio-items">
+                <!-- Web Design Projects -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/web1.jpg" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Luxury Fashion Store</h3>
+                                <p>E-commerce Website</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/web2.jpg" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Global Consulting Firm</h3>
+                                <p>Corporate Website</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/web3.jpg" alt="Educational Platform">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>LearnHub</h3>
+                                <p>Educational Platform</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/mobile1.jpg" alt="Fitness App">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>FitTrack Pro</h3>
+                                <p>Fitness Tracking App</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/mobile2.jpg" alt="Food Delivery App">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>QuickBite</h3>
+                                <p>Food Delivery App</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/mobile3.jpg" alt="Travel App">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Wanderlust</h3>
+                                <p>Travel Planning App</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Projects -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/brand1.jpg" alt="Cafe Branding">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Brew & Bean</h3>
+                                <p>Cafe Branding</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/brand2.jpg" alt="Tech Startup Branding">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>NexGen</h3>
+                                <p>Tech Startup Branding</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Projects -->
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/ui1.jpg" alt="Banking Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>FinanceFlow</h3>
+                                <p>Banking Dashboard UI</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/ui2.jpg" alt="Smart Home App">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>HomeControl</h3>
+                                <p>Smart Home App UI</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/ui3.jpg" alt="Streaming Service">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>StreamVibe</h3>
+                                <p>Media Streaming UI</p>
+                                <a href="project-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's bring your ideas to life with our design expertise.</p>
+                <a href="contact.html" class="btn btn-light">Start a Conversation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>DesignStudio</h3>
+                    <p>We create beautiful digital experiences that drive growth and success for ambitious brands.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">Branding</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creative City</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:info@designstudio.com">info@designstudio.com</a></p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 DesignStudio. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Overlay for Mobile Navigation -->
+    <div class="overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
